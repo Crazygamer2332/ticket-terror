@@ -1,23 +1,22 @@
 [gd_resource type="Theme" format=3 uid="uid://dk821qyanfeov"]
 
-[ext_resource type="Texture2D" uid="uid://c4emfk6dnre2f" path="res://Art/Main Menu/Main Menu Button Selected.png" id="1_v660e"]
-[ext_resource type="Texture2D" uid="uid://cvqk66ndqcrd1" path="res://Art/Main Menu/Main Menu Button Pressed.png" id="2_2xw6p"]
-[ext_resource type="Texture2D" uid="uid://bperwlumds3u7" path="res://Art/Main Menu/main_menu_button_unpressed.png" id="3_oo7dq"]
+[ext_resource type="Texture2D" uid="uid://ck602vkuyjje" path="res://Art/Main Menu/Main Menu Button Normal.png" id="1_sobw3"]
+[ext_resource type="Texture2D" uid="uid://e4q30tpo0gy7" path="res://Art/Main Menu/Main Menu Button Pressed.png" id="2_2xw6p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g6ldo"]
+texture = ExtResource("1_sobw3")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v660e"]
-texture = ExtResource("1_v660e")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sobw3"]
 texture = ExtResource("2_2xw6p")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rgh7m"]
-texture = ExtResource("3_oo7dq")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2xw6p"]
+texture = ExtResource("1_sobw3")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4bia2"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oo7dq"]
 texture = ExtResource("2_2xw6p")
 
 [resource]
-Button/styles/hover = SubResource("StyleBoxTexture_v660e")
-Button/styles/hover_pressed = SubResource("StyleBoxTexture_sobw3")
-Button/styles/normal = SubResource("StyleBoxTexture_rgh7m")
-Button/styles/pressed = SubResource("StyleBoxTexture_4bia2")
+Button/styles/hover = SubResource("StyleBoxTexture_g6ldo")
+Button/styles/hover_pressed = SubResource("StyleBoxTexture_v660e")
+Button/styles/normal = SubResource("StyleBoxTexture_2xw6p")
+Button/styles/pressed = SubResource("StyleBoxTexture_oo7dq")
