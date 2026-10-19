@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://1yj8whgpmrx6"]
+
+[ext_resource type="Theme" uid="uid://dk821qyanfeov" path="res://Themes/main_menu_theme.tres" id="1_28flt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_erv1k"]
+font_size = 50
+
+[node name="Main Menu" type="Control" unique_id=57697141]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_28flt")
+
+[node name="Title" type="Label" parent="." unique_id=314677562]
+layout_mode = 0
+offset_left = 421.5
+offset_top = 50.0
+offset_right = 730.5
+offset_bottom = 119.0
+text = "Ticket Terror"
+label_settings = SubResource("LabelSettings_erv1k")
+horizontal_alignment = 1
+
+[node name="Menu Buttons" type="VBoxContainer" parent="." unique_id=849639513]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 300.0
+offset_right = 651.0
+offset_bottom = 366.0
+
+[node name="New Game Button" type="Button" parent="Menu Buttons" unique_id=1515977463]
+layout_mode = 2
+text = "New Game"
+
+[node name="Settings Button" type="Button" parent="Menu Buttons" unique_id=237128621]
+layout_mode = 2
+text = "Settings"
