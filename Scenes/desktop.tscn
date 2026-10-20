@@ -8,10 +8,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="." unique_id=1312200741]
+[node name="Panel" type="Panel" parent="." unique_id=1794184130]
 layout_mode = 0
-offset_left = 507.0
-offset_top = 272.0
-offset_right = 547.0
-offset_bottom = 295.0
-text = "INSERT DESKTOP"
+offset_right = 540.0
+offset_bottom = 360.0

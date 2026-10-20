@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Ticket Terror"
+run/main_scene="uid://1yj8whgpmrx6"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Art/Sprites/icon.svg"
 
 [audio]
 
@@ -20,6 +21,8 @@ buses/default_bus_layout=""
 
 [display]
 
+window/size/viewport_width=540
+window/size/viewport_height=360
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -28,7 +31,8 @@ window/stretch/aspect="expand"
 folder_colors={
 "res://Art/": "purple",
 "res://Art/Themes/": "purple",
-"res://Scenes/": "red"
+"res://Scenes/": "red",
+"res://Scripts/": "green"
 }
 
 [physics]
