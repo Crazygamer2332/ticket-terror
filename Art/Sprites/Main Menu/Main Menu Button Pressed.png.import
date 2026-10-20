@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e4q30tpo0gy7"
-path="res://.godot/imported/Main Menu Button Pressed.png-5e9790bf239f9419243891c254bbe090.ctex"
+path="res://.godot/imported/Main Menu Button Pressed.png-20f43adb438178f37b48077571362b48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Main Menu/Main Menu Button Pressed.png"
-dest_files=["res://.godot/imported/Main Menu Button Pressed.png-5e9790bf239f9419243891c254bbe090.ctex"]
+source_file="res://Art/Sprites/Main Menu/Main Menu Button Pressed.png"
+dest_files=["res://.godot/imported/Main Menu Button Pressed.png-20f43adb438178f37b48077571362b48.ctex"]
 
 [params]
 

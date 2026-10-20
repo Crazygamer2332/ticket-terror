@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1yj8whgpmrx6"]
 
-[ext_resource type="Theme" uid="uid://dk821qyanfeov" path="res://Themes/main_menu_theme.tres" id="1_28flt"]
+[ext_resource type="Theme" uid="uid://dk821qyanfeov" path="res://Art/Themes/main_menu_theme.tres" id="1_28flt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_erv1k"]
 font_size = 50
