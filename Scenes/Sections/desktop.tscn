@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://dj7xh6p2hrgy2"]
+
+[ext_resource type="Script" uid="uid://ccdpe44efot6d" path="res://Scripts/desktop/Guidebook.gd" id="1_awn87"]
+[ext_resource type="Theme" uid="uid://c244xhfth3vxy" path="res://Art/Themes/menus.tres" id="1_w5kw8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 10
+
+[node name="Desktop" type="Control" unique_id=810684964]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Guidebook" type="CanvasLayer" parent="." unique_id=666374386]
+
+[node name="Panel" type="Panel" parent="Guidebook" unique_id=828047147]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -82.5
+offset_right = 127.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_awn87")
+
+[node name="ExitButton" type="Button" parent="Guidebook/Panel" unique_id=752281585]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -12.0
+offset_bottom = 17.0
+grow_horizontal = 0
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_w5kw8")
+text = "X"
+
+[node name="DragButton" type="Button" parent="Guidebook/Panel" unique_id=1755233233]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 243.5
+offset_bottom = 165.5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Guidebook/Panel" unique_id=1920975882]
+layout_mode = 0
+offset_top = 17.5
+offset_right = 255.5
+offset_bottom = 165.5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Guidebook/Panel/ScrollContainer" unique_id=410479150]
+custom_maximum_size = Vector2(250, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="Title1" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1610636108]
+layout_mode = 2
+text = "Lorem ipsum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description1" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=758350460]
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
+
+"
+label_settings = SubResource("LabelSettings_yf5fn")
+autowrap_mode = 2
+
+[node name="HSeparator1" type="HSeparator" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=304629088]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Title2" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=373972097]
+layout_mode = 2
+text = "Lorem ipsum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description2" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=2080487805]
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
+
+"
+label_settings = SubResource("LabelSettings_yf5fn")
+autowrap_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1005524722]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Title3" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1241389777]
+layout_mode = 2
+text = "Lorem ipsum"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description3" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=481675727]
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
+
+"
+label_settings = SubResource("LabelSettings_yf5fn")
+autowrap_mode = 2
+
+[node name="Title" type="Label" parent="Guidebook/Panel" unique_id=1547635117]
+layout_mode = 0
+offset_right = 243.5
+offset_bottom = 17.5
+text = "Guidebook"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Guidebook/Panel/ExitButton" to="Guidebook/Panel" method="_exit_button_pressed"]
+[connection signal="button_down" from="Guidebook/Panel/DragButton" to="Guidebook/Panel" method="_drag_on"]
+[connection signal="button_up" from="Guidebook/Panel/DragButton" to="Guidebook/Panel" method="_drag_off"]

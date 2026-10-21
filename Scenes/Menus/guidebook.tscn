@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dj7xh6p2hrgy2"]
+[gd_scene format=3 uid="uid://cbfkk15hsajpe"]
 
-[node name="Desktop" type="Control" unique_id=810684964]
+[node name="Guidebook" type="Control" unique_id=1755623916]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
