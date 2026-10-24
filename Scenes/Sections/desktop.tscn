@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dj7xh6p2hrgy2"]
 
-[ext_resource type="Script" uid="uid://ccdpe44efot6d" path="res://Scripts/desktop/Guidebook.gd" id="1_awn87"]
+[ext_resource type="Script" uid="uid://ccdpe44efot6d" path="res://Scripts/Desktop/Guidebook.gd" id="1_awn87"]
 [ext_resource type="Theme" uid="uid://c244xhfth3vxy" path="res://Art/Themes/menus.tres" id="1_w5kw8"]
+[ext_resource type="Script" uid="uid://cmjjwuoqqwn7t" path="res://Scripts/Desktop/SupportManager.gd" id="3_cmqc4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
 font_size = 10
@@ -19,7 +20,8 @@ grow_vertical = 2
 
 [node name="Guidebook" type="CanvasLayer" parent="." unique_id=666374386]
 
-[node name="Panel" type="Panel" parent="Guidebook" unique_id=828047147]
+[node name="Background" type="Panel" parent="Guidebook" unique_id=828047147]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -33,7 +35,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_awn87")
 
-[node name="ExitButton" type="Button" parent="Guidebook/Panel" unique_id=752281585]
+[node name="ExitButton" type="Button" parent="Guidebook/Background" unique_id=752281585]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -45,31 +47,31 @@ mouse_default_cursor_shape = 2
 theme = ExtResource("1_w5kw8")
 text = "X"
 
-[node name="DragButton" type="Button" parent="Guidebook/Panel" unique_id=1755233233]
+[node name="DragButton" type="Button" parent="Guidebook/Background" unique_id=1755233233]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 243.5
 offset_bottom = 165.5
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Guidebook/Panel" unique_id=1920975882]
+[node name="ScrollContainer" type="ScrollContainer" parent="Guidebook/Background" unique_id=1920975882]
 layout_mode = 0
 offset_top = 17.5
 offset_right = 255.5
 offset_bottom = 165.5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Guidebook/Panel/ScrollContainer" unique_id=410479150]
+[node name="VBoxContainer" type="VBoxContainer" parent="Guidebook/Background/ScrollContainer" unique_id=410479150]
 custom_maximum_size = Vector2(250, -1)
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 2
 
-[node name="Title1" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1610636108]
+[node name="Title1" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=1610636108]
 layout_mode = 2
 text = "Lorem ipsum"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description1" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=758350460]
+[node name="Description1" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=758350460]
 layout_mode = 2
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
 
@@ -77,17 +79,17 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia t
 label_settings = SubResource("LabelSettings_yf5fn")
 autowrap_mode = 2
 
-[node name="HSeparator1" type="HSeparator" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=304629088]
+[node name="HSeparator1" type="HSeparator" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=304629088]
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Title2" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=373972097]
+[node name="Title2" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=373972097]
 layout_mode = 2
 text = "Lorem ipsum"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description2" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=2080487805]
+[node name="Description2" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=2080487805]
 layout_mode = 2
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
 
@@ -95,17 +97,17 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia t
 label_settings = SubResource("LabelSettings_yf5fn")
 autowrap_mode = 2
 
-[node name="HSeparator2" type="HSeparator" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1005524722]
+[node name="HSeparator2" type="HSeparator" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=1005524722]
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Title3" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=1241389777]
+[node name="Title3" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=1241389777]
 layout_mode = 2
 text = "Lorem ipsum"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description3" type="Label" parent="Guidebook/Panel/ScrollContainer/VBoxContainer" unique_id=481675727]
+[node name="Description3" type="Label" parent="Guidebook/Background/ScrollContainer/VBoxContainer" unique_id=481675727]
 layout_mode = 2
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia turpis id enim lacinia, at mattis dolor pretium. Donec egestas ut velit molestie pulvinar. Etiam mauris odio, commodo ac lectus vitae, dignissim fringilla purus. Donec lobortis rutrum risus, sit amet venenatis ante. Morbi finibus pretium ante, at varius lacus rhoncus ac. Suspendisse ultricies urna a libero ultricies, a vulputate massa placerat. Cras finibus sollicitudin lectus, sed bibendum lectus tempor eget. Quisque rutrum fermentum ligula id scelerisque. Nunc tortor diam, luctus at tortor quis, pretium mattis turpis. Nam nec fermentum elit, ut tristique lorem. Quisque quis leo ac est hendrerit porttitor nec ut nunc. Praesent sed commodo justo. In aliquam faucibus magna vel convallis.
 
@@ -113,7 +115,7 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia t
 label_settings = SubResource("LabelSettings_yf5fn")
 autowrap_mode = 2
 
-[node name="Title" type="Label" parent="Guidebook/Panel" unique_id=1547635117]
+[node name="Title" type="Label" parent="Guidebook/Background" unique_id=1547635117]
 layout_mode = 0
 offset_right = 243.5
 offset_bottom = 17.5
@@ -122,6 +124,111 @@ label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Guidebook/Panel/ExitButton" to="Guidebook/Panel" method="_exit_button_pressed"]
-[connection signal="button_down" from="Guidebook/Panel/DragButton" to="Guidebook/Panel" method="_drag_on"]
-[connection signal="button_up" from="Guidebook/Panel/DragButton" to="Guidebook/Panel" method="_drag_off"]
+[node name="Support Manager" type="CanvasLayer" parent="." unique_id=574321078]
+
+[node name="Background" type="Panel" parent="Support Manager" unique_id=411930486]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -82.5
+offset_right = 127.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_cmqc4")
+
+[node name="ExitButton" type="Button" parent="Support Manager/Background" unique_id=1607987437]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -12.0
+offset_bottom = 17.0
+grow_horizontal = 0
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_w5kw8")
+text = "X"
+
+[node name="DragButton" type="Button" parent="Support Manager/Background" unique_id=389937033]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 243.5
+offset_bottom = 165.5
+
+[node name="Title" type="Label" parent="Support Manager/Background" unique_id=1257170775]
+layout_mode = 0
+offset_right = 243.5
+offset_bottom = 17.5
+text = "Support Manager"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Support Manager/Background" unique_id=750427128]
+layout_mode = 0
+offset_top = 17.5
+offset_right = 255.5
+offset_bottom = 165.5
+
+[node name="GridContainer" type="GridContainer" parent="Support Manager/Background/ScrollContainer" unique_id=1949897381]
+layout_mode = 2
+columns = 2
+
+[node name="Name" type="Label" parent="Support Manager/Background/ScrollContainer/GridContainer" unique_id=179844099]
+layout_mode = 2
+text = "First Name: Jane
+Last Name: Doe"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Support Manager/Background/ScrollContainer/GridContainer" unique_id=2018240049]
+layout_mode = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="Support Manager/Background/ScrollContainer/GridContainer/ScrollContainer" unique_id=1216049812]
+layout_mode = 2
+
+[node name="Issue" type="Label" parent="Support Manager/Background/ScrollContainer/GridContainer/ScrollContainer/BoxContainer" unique_id=2137998636]
+custom_minimum_size = Vector2(0.1, 0)
+custom_maximum_size = Vector2(125, -1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Support Ticket Issue:."
+autowrap_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="Support Manager/Background/ScrollContainer/GridContainer" unique_id=192666827]
+layout_mode = 2
+selected = 0
+item_count = 1
+popup/item_0/text = "Test"
+popup/item_0/id = 0
+
+[node name="Button" type="Button" parent="Support Manager/Background/ScrollContainer/GridContainer" unique_id=2007071599]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Submit Response"
+
+[node name="DesktopApps" type="GridContainer" parent="." unique_id=1226336557]
+layout_mode = 0
+offset_right = 162.0
+offset_bottom = 142.0
+
+[node name="Guidebook" type="Button" parent="DesktopApps" unique_id=1703973385]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Guidebook"
+
+[node name="SupportManager" type="Button" parent="DesktopApps" unique_id=308701488]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Support
+"
+
+[connection signal="pressed" from="Guidebook/Background/ExitButton" to="Guidebook/Background" method="_exit_button_pressed"]
+[connection signal="button_down" from="Guidebook/Background/DragButton" to="Guidebook/Background" method="_drag_on"]
+[connection signal="button_up" from="Guidebook/Background/DragButton" to="Guidebook/Background" method="_drag_off"]
+[connection signal="pressed" from="Support Manager/Background/ExitButton" to="Support Manager/Background" method="_exit_button_pressed"]
+[connection signal="button_down" from="Support Manager/Background/DragButton" to="Support Manager/Background" method="_drag_on"]
+[connection signal="button_up" from="Support Manager/Background/DragButton" to="Support Manager/Background" method="_drag_off"]
+[connection signal="pressed" from="DesktopApps/Guidebook" to="Guidebook/Background" method="_open_pressed"]
+[connection signal="pressed" from="DesktopApps/SupportManager" to="Support Manager/Background" method="_open_pressed"]

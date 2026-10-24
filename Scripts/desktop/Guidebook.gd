@@ -21,3 +21,7 @@ func _drag_on() -> void:
 
 func _drag_off() -> void:
 	dragging = false
+
+
+func _open_pressed() -> void:
+	visible = true
